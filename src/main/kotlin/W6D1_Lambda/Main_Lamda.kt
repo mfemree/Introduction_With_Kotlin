@@ -20,18 +20,32 @@ fun main() {
     degisken2()                    // sayHello()            bir nevi boyle oldu             yani  ->  Hello
     degisken3("ali")         // greeting("ali")       bir nevi bunu yapmis olduk      yani  ->  Hello greeting ali
 
+    /******************************************************************************************************************/
 
     val deneme = ::greeting
     val deneme2 = ::greeting2
-
-
-    // aslinda fonksiyon icine fonksiyon yolluyoruz
 
     takesParam(deneme)           // Hello greeting campus
     takesParam(::greeting)      // Hello greeting campus
 
     takesParam(deneme2)         // Hello greeting2 campus
     takesParam(::greeting2)     // Hello greeting2 campus
+
+    // aslinda fonksiyon icine fonksiyon yolluyoruz
+
+    /******************************************************************************************************************/
+
+
+    val denemee:(String) -> Unit  = ::greeting
+    val denemee2:(String) -> Unit  = ::greeting2
+
+    takesParam2(denemee)        //  Hello greeting campus 2
+    takesParam2(::greeting)     //  Hello greeting campus 2
+
+    takesParam2(denemee2)       //  Hello greeting2 campus 2
+    takesParam2(::greeting2)    //  Hello greeting2 campus 2
+
+    /******************************************************************************************************************/
 
     val denemeWithType: (String) -> Unit = ::greeting
     // bu sekilde de tanimlayabilriiz
@@ -43,8 +57,6 @@ fun main() {
     }
 
     denemeWithType2("Emre")  // Hello greeting Emre
-
-
 }
 
 
@@ -65,4 +77,9 @@ fun takesParam(param: KFunction1<String, Unit>) {  // param: (String) = buraya p
     param("campus")                                // yani buraya gelecek olan fonskiyonu hic bir zaman bilemeyecegiz
                                                    // takeSparam da buraya hangi fonksiyonun gelecegini bilmez
                                                    // o yuzden String parametre alan ve unit donduren her fonskiyonu icine alir.
+}
+
+
+fun takesParam2(param: (String) -> Unit ) {
+    param("campus 2")
 }
