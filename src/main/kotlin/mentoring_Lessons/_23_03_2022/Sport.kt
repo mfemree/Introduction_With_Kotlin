@@ -1,4 +1,4 @@
-package Mentoring_Lessons._23_03_2022
+package mentoring_Lessons._23_03_2022
 
 data class Sport (var sportName: String, val sportImg: Int, val sportDesc: String )
 

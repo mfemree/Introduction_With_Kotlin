@@ -1,4 +1,4 @@
-package Mentoring_Lessons._23_03_2022
+package mentoring_Lessons._23_03_2022
 
 // sadece verileri tutan model bir class gibi dusun bu classi
 data class PersonalInfo( val name: String, val email: String, val phoneNum: Long)

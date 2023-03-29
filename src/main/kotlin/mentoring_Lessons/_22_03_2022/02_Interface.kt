@@ -1,4 +1,4 @@
-package Mentoring_Lessons._22_03_2022
+package mentoring_Lessons._22_03_2022
 
 
 interface Person2 {

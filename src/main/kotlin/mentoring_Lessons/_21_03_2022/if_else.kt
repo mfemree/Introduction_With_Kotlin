@@ -1,4 +1,4 @@
-package Mentoring_Lessons
+package mentoring_Lessons
 
 fun main() {
 

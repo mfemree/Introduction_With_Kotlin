@@ -1,4 +1,4 @@
-package Mentoring_Lessons._21_03_2022._Araba
+package mentoring_Lessons._21_03_2022._Araba
 
 class Volvo: Araba4("mavi", 2000) {
 

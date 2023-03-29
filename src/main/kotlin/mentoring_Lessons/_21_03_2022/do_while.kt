@@ -1,4 +1,4 @@
-package Mentoring_Lessons._21_03_2022
+package mentoring_Lessons._21_03_2022
 
 fun main() {
 

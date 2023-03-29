@@ -1,4 +1,4 @@
-package Mentoring_Lessons._21_03_2022._Araba
+package mentoring_Lessons._21_03_2022._Araba
 
 open class Araba3_getter_setter(var renk: String, var sene: Int) {
 

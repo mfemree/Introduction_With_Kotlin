@@ -1,4 +1,4 @@
-package Mentoring_Lessons._21_03_2022._Araba
+package mentoring_Lessons._21_03_2022._Araba
 
 class Araba2(var renk: String, var sene: Int) {          // arabayi bu sekilde yazarsak da constructor olur.
 
