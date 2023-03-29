@@ -18,14 +18,12 @@ SATURDAY(true);
             return obj.name.compareTo("SATURDAY") == 0 || obj.name.compareTo("SUNDAY") == 0
         }
     }
-
-    fun main() {
-
-        // A simple demonstration of properties and methods
-        for ( day in mentoring_lessons._27_03_2022.DAYS2.values()) {
-            println("${day.ordinal} = ${day.name} and is weekend ${day.isWeekend}")
-        }
-    val today = mentoring_lessons._27_03_2022.DAYS2.MONDAY
-        println("is today a weekend ${mentoring_lessons._27_03_2022.DAYS2.Companion.today(today)}")
+}
+fun main () {
+    // A simple demonstration of properties and methods
+    for ( day in mentoring_lessons._27_03_2022.DAYS2.values()) {
+        println("${day.ordinal} = ${day.name} and is weekend ${day.isWeekend}")
     }
+    val today = mentoring_lessons._27_03_2022.DAYS2.MONDAY
+    println("is today a weekend ${mentoring_lessons._27_03_2022.DAYS2.Companion.today(today)}")
 }
