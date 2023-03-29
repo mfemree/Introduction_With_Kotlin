@@ -13,9 +13,6 @@ object obj {
     }
 }
 
-
-
-
 fun main () {
 
     var obj1 : obj = obj
