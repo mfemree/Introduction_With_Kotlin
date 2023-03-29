@@ -1,4 +1,4 @@
-package mentoring_lessons._27_03_2022
+package mentoring_lessons._28_03_2022
 
 enum class DAYS {
 
@@ -15,9 +15,9 @@ enum class DAYS {
 
 fun main() {
 
-    for ( day in mentoring_lessons._27_03_2022.DAYS.values()) {
+    for ( day in mentoring_lessons._28_03_2022.DAYS.values()) {
 
         println("${day.ordinal} = ${day.name}")
     }
-    println("${mentoring_lessons._27_03_2022.DAYS.valueOf("SUNDAY")}")
+    println("${mentoring_lessons._28_03_2022.DAYS.valueOf("SUNDAY")}")
 }

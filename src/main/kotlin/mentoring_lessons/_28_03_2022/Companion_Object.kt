@@ -1,4 +1,4 @@
-package mentoring_lessons._27_03_2022
+package mentoring_lessons._28_03_2022
 
 class KullaniciKayit ( var id: Int, var isim: String ) {
 
@@ -20,26 +20,26 @@ class KullaniciKayit ( var id: Int, var isim: String ) {
     }
 
     init {
-        mentoring_lessons._27_03_2022.KullaniciKayit.Companion.kullaniciKayit++
+        mentoring_lessons._28_03_2022.KullaniciKayit.Companion.kullaniciKayit++
     }
 
     fun BilgileriGoster()  {
-        println("id: $id, isim: $isim, kullanici sayisi: ${mentoring_lessons._27_03_2022.KullaniciKayit.Companion.kullaniciKayit}" )
+        println("id: $id, isim: $isim, kullanici sayisi: ${mentoring_lessons._28_03_2022.KullaniciKayit.Companion.kullaniciKayit}" )
     }
 }
 
 fun main() {
 
-    var kullanici1: mentoring_lessons._27_03_2022.KullaniciKayit =
-        mentoring_lessons._27_03_2022.KullaniciKayit(1, "Mustafa")
+    var kullanici1: mentoring_lessons._28_03_2022.KullaniciKayit =
+        mentoring_lessons._28_03_2022.KullaniciKayit(1, "Mustafa")
     kullanici1.BilgileriGoster()
 
-    var kullanici2: mentoring_lessons._27_03_2022.KullaniciKayit =
-        mentoring_lessons._27_03_2022.KullaniciKayit(2, "Emre")
+    var kullanici2: mentoring_lessons._28_03_2022.KullaniciKayit =
+        mentoring_lessons._28_03_2022.KullaniciKayit(2, "Emre")
     kullanici2.BilgileriGoster()
 
-    var kullanici3: mentoring_lessons._27_03_2022.KullaniciKayit =
-        mentoring_lessons._27_03_2022.KullaniciKayit(3, "US")
+    var kullanici3: mentoring_lessons._28_03_2022.KullaniciKayit =
+        mentoring_lessons._28_03_2022.KullaniciKayit(3, "US")
     kullanici3.BilgileriGoster()
 
     // basina companion object yazmadigimizda:
