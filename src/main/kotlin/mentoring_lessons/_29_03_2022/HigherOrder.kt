@@ -6,7 +6,7 @@ fun main(){
 
     //println(invokeLambda { num -> num > 0 })
 
-    fun performAction(action: () -> Unit) {
+    fun performAction(action: () -> Unit) {   // action lambdasi/fonksiyonu hic bir parametre almaaycak
         // Do things before the action
         println("Before action")
         action()
