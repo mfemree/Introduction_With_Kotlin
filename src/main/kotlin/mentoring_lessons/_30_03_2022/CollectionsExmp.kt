@@ -24,14 +24,14 @@ ve tum kanallar bittiginde "secilecek kanal kalmadi" yazdirsin
 
 fun main() {
     // EX4
-    val list = mutableListOf("A", "B", "C", "D", "E")
+/*    val list = mutableListOf("A", "B", "C", "D", "E")
 
     for (i in 0..4) {
         val randomIdx = list.indices.random()
         println(list[randomIdx])
         list.removeAt(randomIdx)
         if(list.size == 0) println("secilecek kanal kalmadi")
-    }
+    }*/
 
     // EX3
     /*val list = mutableListOf<Int>()
@@ -57,21 +57,23 @@ fun main() {
 
 
     // EX1
-    /*val list = mutableListOf<Int>()
+    val list = mutableListOf<Int>()
     val list2 = mutableListOf(1,2,3,5,6,5)
 
-    for (i in 1..10) {
-        list.add((0..20).random())
+    for (i in 1..10) {          // ve 10 tane tut
+        list.add((0..20).random())  // 20 ye kadar random sayi tut aklinda
     }
 
-    println(list)
-    println(list.indexOf(5))
+    println("list= $list")
+    println(list.indexOf(5))  // aklinda tuttugun sayilarda 5 varsa, 5 in indexini ver.
 
     if (list.indexOf(5) == -1) println("Eleman bulunamadı.")
     else println("Index = ${list.indexOf(5)}")
 
-    println("\n${list2.indexOf(5)}")
-    println("\n${list2.lastIndexOf(5)}")*/
+    println("list2= $list2")
+
+    println("\n${list2.indexOf(5)}")              // 5 in indexi
+    println("\n${list2.lastIndexOf(5)}")  // sondan basla aramaya
 
 
 }
